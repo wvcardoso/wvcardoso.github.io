@@ -1,0 +1,91 @@
+/* Estilo fiel à referência: Fundo claro e foco no conteúdo */
+:root {
+    --bg-color: #f9f9f7; /* Tom off-white idêntico ao anexo */
+    --text-main: #1a1a1b;
+    --text-sub: #4a4a4a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    /*font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px; /* Alinhamento centralizado com respiro lateral */
+}
+
+/* Foto de Perfil */
+.avatar-wrapper {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 40px;    
+}
+
+.avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;    
+}
+
+/* Tipografia Robusta */
+.name {
+    font-size: 2rem; /* Tamanho grande conforme imagem */
+    font-weight: 800;    
+    letter-spacing: -0.04em;
+    margin-bottom: 12px;
+}
+
+.headline {
+    font-size: 1.2rem;
+    color: var(--text-sub);
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+/* Ícones Sociais Puros */
+.social-links {
+    display: flex;
+    gap: 24px; /* Espaçamento generoso entre os ícones */
+}
+
+.icon-item {
+    color: var(--text-main);
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.icon-item:hover {
+    opacity: 0.6;
+}
+
+/* Ajuste de tamanho dos ícones Lucide */
+.icon-item i {
+    width: 24px;
+    height: 24px;
+    stroke-width: 2.5px; /* Deixa o ícone levemente mais grosso e legível */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 480px) {
+    .name {
+        font-size: 2.2rem;
+    }
+}
